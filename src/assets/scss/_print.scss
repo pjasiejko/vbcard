@@ -1,0 +1,8 @@
+@media print {
+  vbcard-main > * {
+    display: none !important;
+  }
+  vbcard-root vbcard-resume-print {
+    display: block;
+  }
+}

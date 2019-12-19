@@ -1,0 +1,12 @@
+<div class="row">
+  <ng-container *ngFor="let dataItem of data;">
+    <div class="col-12 col-sm-6 col-md-4">
+      <vbcard-chart-bar *ngIf="isChartBar(dataItem)" [itemData]="dataItem"></vbcard-chart-bar>
+      <vbcard-dot-bar *ngIf="isDotBar(dataItem)" [itemData]="dataItem" pointsNumber="5"></vbcard-dot-bar>
+      <div *ngIf="isLanguageNative(dataItem)"><span class="native-text">{{dataItem.label}} </span>
+        <div class="native-value mb-5"> NATIVE</div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+

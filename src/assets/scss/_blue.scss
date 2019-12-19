@@ -1,0 +1,11 @@
+@import '_mixins.scss';
+
+$blue: #00b9ff;
+
+.wrapper.blue {
+  @include vbcard-color-template($blue, #222222)
+}
+
+.theme-color.blue {
+  background: $blue;
+}

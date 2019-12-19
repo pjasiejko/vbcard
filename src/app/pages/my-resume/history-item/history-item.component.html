@@ -1,0 +1,19 @@
+<div class="item">
+  <span class="bullet"></span>
+  <div class="card">
+    <div class="card-header">
+      <span class="dates">{{itemData.dateFrom}} - {{itemData.dateTo}}</span>
+      <span class="d-block font-weight-400">
+        <span class="font-weight-700">{{itemData.level}}</span>
+        <div class="mt-2">{{itemData.label}}</div>
+      </span>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li *ngFor="let achievement of itemData.achievements;">
+          <p>{{achievement}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

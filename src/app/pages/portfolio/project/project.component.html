@@ -1,0 +1,30 @@
+<div class="card mb-5 border-0">
+  <div class="card-body">
+    <h5 class="card-title uppercase">{{project.name}}</h5>
+    <h6 class="card-title">{{project.duration}}</h6>
+    <div class="card-text d-flex flex-row">
+      <span class="card-text-label">Opis:</span> {{project.description}}
+    </div>
+    <div class="card-text d-flex flex-row"><span class="card-text-label">Technologie:</span> {{project.technologies}}
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div *ngFor="let item of images; let i = index"
+           [gallery]="galleryId"
+           [lightbox]="i"
+           class="col-lg-2 col-md-4 p-2"
+      >
+        <img [src]="item.data.thumb" alt="" class="w-100 border"/>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+
+
+
+
+
+
+
+
+

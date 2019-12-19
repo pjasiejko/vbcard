@@ -1,0 +1,83 @@
+<div class="container-fluid wrapper light">
+  <div class="row">
+    <div class="col-md-4 left-column pt-4 pb-4 pl-5 pr-5">
+      <h2 class="font-weight-600 uppercase text-center">Piotr Jasiejko</h2>
+      <h4 class="text-center">Full stack web developer</h4>
+      <div class="sidebar-picture mt-3 mb-3">
+        <img alt="my picture" src="../../../assets/images/head-right.png">
+      </div>
+      <vbcard-contact-links></vbcard-contact-links>
+
+      <section class="education-container mt-5">
+        <h5 class="section-title uppercase mt-3 text-center">Edukacja</h5>
+        <div *ngFor="let education of educations;" class="resume-items">
+          <vbcard-history-item [itemData]="education"></vbcard-history-item>
+        </div>
+      </section>
+      <div class="row mt-5">
+        <div class="col-12">
+          <h5 class="font-weight-600 uppercase section-title text-center">Języki</h5>
+        </div>
+      </div>
+      <div *ngFor="let dataItem of languages;" class="row pl-3 pr-3">
+        <div class="col-12">
+          <vbcard-dot-bar [itemData]="dataItem"></vbcard-dot-bar>
+          <div class="text-center">{{dataItem.levelLabel}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 pt-4 pb-4 pl-5 pr-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h5 class="section-title uppercase">O mnie</h5>
+          <div>
+            <p class="summary-text">
+              Jestem 34 letnim magistrem informatyki, posiadam 12-letnie doświadczenie w programowaniu aplikacji
+              webowych.
+              Dzięki posiadanym umiejętnościom sprawdzam się zarówno jako programista frontend jak i backend.
+              Dobrze odnajduje się w pracy zespołowej jak i w indywidualnych zadaniach.
+              Obecnie poszukuję pracy w której będę mógł wykorzystać moje umiejętności oraz dalej doskonalić się jako
+              programista Angular/Java.
+            </p>
+          </div>
+        </div>
+        <!-- Experience Starts -->
+        <div class="col-md-12">
+          <h5 class="section-title uppercase mt-3">Doświadczenie</h5>
+          <div *ngFor="let experience of experiences;" class="resume-items">
+            <vbcard-history-item [itemData]="experience"></vbcard-history-item>
+          </div>
+        </div>
+        <!-- Experience Ends -->
+
+      </div>
+      <div class="row mt-2 mb-2">
+        <div class="col-12">
+          <h5 class="font-weight-600 uppercase section-title mt-3">Umiejętności</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h5 class="uppercase skill-title">Frontend</h5>
+        </div>
+        <div class="col-11">
+          <vbcard-skills [data]="frontendSkills"></vbcard-skills>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-1">
+          <h5 class="uppercase skill-title">Backend</h5>
+        </div>
+        <div class="col-11">
+          <vbcard-skills [data]="backendSkills"></vbcard-skills>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="resume-agreement">
+  Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji
+  zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony
+  osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz
+  uchylenia dyrektywy 95/46/WE (RODO).
+</div>

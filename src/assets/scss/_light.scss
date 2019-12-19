@@ -1,0 +1,68 @@
+.wrapper.light {
+
+  .sidebar {
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  .page-title .title-head-subtitle {
+    color: #555;
+  }
+
+  .contact-links-content {
+    a, span {
+      color: #555;
+    }
+  }
+
+  .page-title .title-head-subtitle:before,
+  .page-title .title-head-subtitle:after {
+    background-color: #555;
+  }
+
+  .sidebar-menu {
+    li a {
+      border-left: 3px solid #ffffff;
+    }
+  }
+
+  .title-section {
+    color: #555;
+  }
+
+  .bar-text {
+    color: #555;
+  }
+
+  .item {
+    &:before {
+      border-left: 1px solid #ccc;
+    }
+
+    .bullet {
+      border: 2px solid #ccc;
+      background: #ffffff;
+    }
+  }
+
+  .chart-bar {
+    background: #ddd;
+
+    > .item-progress {
+      background-color: #999;
+    }
+
+    > .percent {
+      border: 1px solid #ccc;
+      color: #555;
+    }
+  }
+
+  .arrow {
+    background-color: #ffffff;
+    border-width: 0 1px 1px 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+
+}

@@ -1,0 +1,35 @@
+<vbcard-page-title [subtitle]="subtitle" [title]="title"></vbcard-page-title>
+<div class="resume-container">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Experience Starts -->
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <h2 class="font-weight-600 uppercase title-section text-center">Experience</h2>
+        <div *ngFor="let experience of experiences;" class="resume-items">
+          <vbcard-history-item [itemData]="experience"></vbcard-history-item>
+        </div>
+      </div>
+      <!-- Experience Ends -->
+      <!-- Education Starts -->
+      <div class="col-xl-6 col-lg-6 col-md-6 skills-container">
+        <h2 class="font-weight-600 uppercase title-section text-center">Education</h2>
+        <div *ngFor="let education of educations;" class="resume-items">
+          <vbcard-history-item [itemData]="education"></vbcard-history-item>
+        </div>
+      </div>
+      <!-- Education Ends -->
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h2 class="font-weight-600 uppercase title-section skills-title text-center">Frontend skills</h2>
+      </div>
+    </div>
+    <vbcard-skills [data]="frontendSkills"></vbcard-skills>
+    <div class="row">
+      <div class="col-12">
+        <h2 class="font-weight-600 uppercase title-section skills-title text-center">Backend skills</h2>
+      </div>
+    </div>
+    <vbcard-skills [data]="backendSkills"></vbcard-skills>
+  </div>
+</div>

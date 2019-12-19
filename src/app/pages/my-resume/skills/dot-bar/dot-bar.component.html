@@ -1,0 +1,9 @@
+<span class="bar-text">{{itemData.label}}</span>
+<div class="dot-bar">
+  <ul class="list-unstyled d-flex">
+    <li *ngFor="let dot of dots; let i = index;" class="flex-fill">
+      <fa-icon [icon]="dot <= checkedDot ? checkedIcon : notCheckedIcon" class="fa-sm"></fa-icon>
+      <div [innerHTML]="dot === checkedDot ? getDotLabel(i): ''"></div>
+    </li>
+  </ul>
+</div>

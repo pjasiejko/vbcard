@@ -1,0 +1,24 @@
+<nav [ngClass]="sidebarCollapsed ? 'collapsed' : ''" class="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-picture">
+      <img alt="my picture" src="../../../assets/images/head-right.png">
+    </div>
+  </div>
+  <ul class="list-unstyled sidebar-menu">
+    <li *ngFor="let menuOption of menuOptions" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active">
+      <a [routerLink]="[menuOption.link]" [state]="[menuOption]">
+        <fa-icon [icon]="faCaretSquareRight"></fa-icon>
+        <span class="sidebar-option-title">{{menuOption.title}}</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="list-unstyled sidebar-buttons">
+    <li>
+      <a (click)="downloadResume()" [routerLink]="[{ outlets: { print: ['print-resume'] } }]" class="download-resume"
+         href="javascript:void(0);">Download my resume</a>
+    </li>
+    <li>
+      <a class="page-source" href="https://github.com/pjasiejko/vbcard">Page source</a>
+    </li>
+  </ul>
+</nav>

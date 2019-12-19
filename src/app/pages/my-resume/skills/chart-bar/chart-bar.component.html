@@ -1,0 +1,6 @@
+<span [ngClass]="{'font-weight-bold': itemData.highlighted}" class="bar-text">{{itemData.label}}</span>
+<div class="chart-bar">
+  <span [ngStyle]="{'width': itemData.level + '%'}" class="item-progress" data-percent="80" style="width: 80%;"></span>
+  <span [ngStyle]="{'right': 'calc('+(100-itemData.level)+'% - 21px)'}" class="percent">{{itemData.levelLabel}}
+    <div class="arrow"></div></span>
+</div>
