@@ -1,0 +1,9 @@
+<div [ngClass]="[themeColor$ | async, themeTone$ | async]" class="wrapper">
+  <vbcard-sidebar [sidebarCollapsed]="sidebarCollapsed$ | async"></vbcard-sidebar>
+  <section class="container-fluid d-flex flex-column" id="content">
+    <vbcard-navbar></vbcard-navbar>
+    <section class="col">
+      <router-outlet></router-outlet>
+    </section>
+  </section>
+</div>

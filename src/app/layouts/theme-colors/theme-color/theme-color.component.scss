@@ -1,0 +1,13 @@
+.theme-color {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 3px;
+  margin-left: 10px;
+  border: 1px solid #cccccc;
+}
+
+.theme-color.active {
+  border: 2px solid #6b6b6b;
+}
+

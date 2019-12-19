@@ -1,0 +1,8 @@
+<div>
+  <ul class="list-unstyled d-flex flex-row align-items-center m-0">
+    <li *ngFor="let themeColor of themeColors">
+      <vbcard-theme-color (changeTheme)="toggleTheme($event)" [active]="themeColor === currentThemeColor"
+                          [colorName]="themeColor"></vbcard-theme-color>
+    </li>
+  </ul>
+</div>

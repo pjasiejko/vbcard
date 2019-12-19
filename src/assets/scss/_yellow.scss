@@ -1,0 +1,11 @@
+@import '_mixins.scss';
+
+$yellow: #ffcc19;
+
+.wrapper.yellow {
+  @include vbcard-color-template($yellow, #6b6b6b)
+}
+
+.theme-color.yellow {
+  background: $yellow;
+}

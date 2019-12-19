@@ -1,0 +1,10 @@
+<div *ngFor="let contactLink of contactLinks | async" class="contact-links-group d-flex flex-row align-items-center">
+  <fa-icon [icon]="getIcon(contactLink.icon)" class="fa-lg mr-3"></fa-icon>
+  <div>
+    <div class="contact-links-title">{{contactLink.name}}</div>
+    <div class="contact-links-content">
+      <a *ngIf="contactLink.url !== ''" href="{{contactLink.url}}" target="_BLANK"> {{contactLink.content}} </a>
+      <span *ngIf="contactLink.url === ''"> {{contactLink.content}} </span>
+    </div>
+  </div>
+</div>

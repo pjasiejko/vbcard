@@ -1,0 +1,7 @@
+<vbcard-page-title [subtitle]="subtitle" [title]="title"></vbcard-page-title>
+
+<div class="row">
+  <div *ngFor="let project of projects; let i = index" class="col-12">
+    <vbcard-project [project]="project" galleryId="gallery{{i}}"></vbcard-project>
+  </div>
+</div>

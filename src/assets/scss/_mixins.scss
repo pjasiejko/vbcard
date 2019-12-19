@@ -1,0 +1,110 @@
+@mixin vbcard-color-template($vbcard-primary-color, $vbcard-second-color) {
+
+  $vbcard-primary-color-dark: darken($vbcard-primary-color, 10%);
+  $vbcard-primary-color-light: lighten($vbcard-primary-color, 10%);
+
+
+  .page-title .title-head-subtitle:before,
+  .page-title .title-head-subtitle:after {
+    background-color: $vbcard-primary-color-dark;
+  }
+  .page-title h2 span {
+    color: $vbcard-primary-color-dark;
+  }
+
+  .sidebar {
+    //background: $vbcard-primary-color;
+    color: $vbcard-second-color;
+  }
+  .sidebar-header {
+    background: $vbcard-primary-color-dark;
+  }
+
+  .sidebar-menu {
+    li a {
+      border-left: 3px solid $vbcard-primary-color;
+    }
+
+    li a:hover {
+      color: $vbcard-primary-color;
+      background: $vbcard-second-color;
+    }
+
+    li.active > a, a[aria-expanded="true"] {
+      color: $vbcard-second-color;
+      background: $vbcard-primary-color-dark;
+    }
+  }
+
+  .sidebar-buttons {
+    li a:hover {
+      color: $vbcard-primary-color;
+      background: $vbcard-second-color;
+    }
+
+    a.download-resume {
+      background: $vbcard-second-color;
+      color: $vbcard-primary-color;
+    }
+
+    a.page-source,
+    a.page-source:hover {
+      background: $vbcard-primary-color-dark;
+      color: $vbcard-second-color;
+    }
+  }
+
+  .sidebarCollapse {
+    background-color: $vbcard-primary-color;
+  }
+
+  .contact-send-btn {
+    background-color: $vbcard-primary-color;
+    border: 1px solid $vbcard-primary-color-dark;
+  }
+
+  .item {
+    &:before {
+      border-left: 1px solid $vbcard-primary-color-dark;
+    }
+
+    .bullet {
+      border: 2px solid $vbcard-primary-color-dark;
+    }
+  }
+
+  .chart-bar {
+    > .item-progress {
+      background-color: $vbcard-primary-color-dark;
+    }
+
+    > .percent {
+      border: 1px solid $vbcard-primary-color-dark;
+      color: $vbcard-primary-color-dark;
+    }
+  }
+
+  .arrow {
+    border-width: 0 1px 1px 0;
+    border-right: 1px solid $vbcard-primary-color-dark;
+    border-bottom: 1px solid $vbcard-primary-color-dark;
+  }
+
+  .my-resume-home {
+    border: 1px solid $vbcard-primary-color-dark;
+    color: $vbcard-primary-color-dark;
+  }
+  .my-resume-home:hover {
+    background: $vbcard-primary-color-dark;
+    color: #ffffff;
+  }
+  .my-resume-home:focus {
+    box-shadow: 0 0 0 0.2rem $vbcard-primary-color-light;
+  }
+
+  .my-resume-home:not(:disabled):not(.disabled):active, .my-resume-home:not(:disabled):not(.disabled).active {
+    border: 1px solid $vbcard-primary-color-dark;
+    color: $vbcard-primary-color-dark;
+  }
+
+}

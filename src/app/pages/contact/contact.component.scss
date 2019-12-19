@@ -1,0 +1,22 @@
+.contact-form {
+  padding-top: 20px;
+
+  #message {
+    min-height: 200px;
+  }
+}
+
+.contact-send-btn {
+  background-color: #6b6b6b;
+  border: 1px solid #aaaaaa;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.ng-valid[required], .ng-valid.required {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid.ng-touched:not(form) {
+  border-left: 5px solid #a94442; /* red */
+}

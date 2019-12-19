@@ -1,0 +1,95 @@
+.wrapper.dark {
+  background: #222222;
+
+  .page-title h2 {
+    color: #FFFFFF;
+  }
+
+  .page-title .title-head-subtitle {
+    color: #FFFFFF;
+  }
+
+  .contact-page {
+    color: #FFFFFF;
+  }
+
+  .home-page {
+    color: #FFFFFF;
+  }
+
+  .contact-links-content {
+    a {
+      color: #FFFFFF;
+    }
+  }
+
+  .page-title .title-head-subtitle:before,
+  .page-title .title-head-subtitle:after {
+    background-color: #ffffff;
+  }
+
+  .sidebar-menu {
+    li a {
+      border-left: 3px solid #ffffff;
+    }
+  }
+
+  .card {
+    color: #ffffff;
+    background-color: #222222;
+    border: none;
+  }
+
+  hr {
+    border: 1px solid #666;
+  }
+
+  .title-section {
+    color: #cccccc;
+  }
+
+  .bar-text {
+    color: #ffffff;
+  }
+
+  .item {
+    &:before {
+      border-left: 1px solid #ccc;
+    }
+
+    .bullet {
+      border: 2px solid #ccc;
+      background: #222222;
+    }
+  }
+
+  .chart-bar {
+    background: #666;
+
+    > .item-progress {
+      background-color: #fff;
+    }
+
+    > .percent {
+      border: 1px solid #ccc;
+      color: #ffffff;
+    }
+  }
+
+  .dot-bar {
+    color: #ffffff;
+  }
+
+  .native-text, .native-value {
+    color: #ffffff;
+  }
+
+  .arrow {
+    background-color: #222222;
+    border-width: 0 1px 1px 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+}
+

@@ -1,0 +1,61 @@
+.bar-text {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.chart-bar {
+  border-radius: 2px;
+  display: block;
+  height: 1px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.chart-bar > .item-progress {
+  border-radius: 2px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1%;
+}
+
+.chart-bar > .percent {
+  /*
+  height: 32px;
+  width: 46px;
+  line-height: 31px;
+  */
+  padding: 1px 10px;
+  margin-top: -41px;
+  position: absolute;
+  right: calc(100% - 40px);
+  z-index: 10;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  top: 50%;
+  text-align: center;
+}
+
+.chart-bar > .percent span {
+  position: relative;
+  display: block;
+}
+
+.chart-bar > .percent span:before {
+
+}
+
+.arrow {
+  display: inline-block;
+  padding: 4px;
+  transform: translateY(33.5px) rotate(45deg) skew(3deg, 3deg) translateX(-27px);
+  bottom: 8px;
+  position: absolute;
+}
+

@@ -1,0 +1,135 @@
+@media screen {
+  :host {
+    display: none;
+  }
+}
+
+.left-column {
+  background: #ccc;
+}
+
+@media print {
+  @page {
+    size: A4; /* DIN A4 standard, Europe */
+    margin: 0 !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+::ng-deep .item {
+  padding-bottom: 10px !important;
+}
+
+.section-title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.skill-title {
+  position: relative;
+  bottom: -120px;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  color: #cccccc;
+  font-weight: 200;
+}
+
+.sidebar-picture {
+  border: 5px solid #999999;
+  height: 220px;
+  background: #ffffff;
+  width: 220px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  img {
+    height: 210px;
+    border-radius: 50%;
+  }
+}
+
+
+.title-section {
+  margin-bottom: 50px;
+  font-size: 23px;
+}
+
+::ng-deep .title-section {
+  margin-bottom: 50px;
+  font-size: 23px;
+}
+
+.resume-container h6 i {
+  padding-right: 7px;
+}
+
+::ng-deep {
+  .chart-bar > .percent {
+    margin-top: 8px !important;
+    font-weight: 200 !important;
+  }
+
+  .dot-bar {
+    color: #666;
+  }
+
+
+  .wrapper.light {
+    .arrow {
+      border-width: 1px 0 0 1px;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      top: -19px;
+      right: -2px;
+      bottom: auto;
+    }
+
+    .education-container {
+      .item {
+        &:before {
+          border-left: 1px solid #aaa;
+        }
+
+        .bullet {
+          border: 2px solid #aaa;
+          background: #ccc;
+        }
+      }
+    }
+
+    .chart-bar > .item-progress {
+      background-color: #666;
+    }
+  }
+
+  .contact-links-title {
+    color: #555555;
+  }
+
+  .contact-links-content {
+    font-size: 1em !important;
+  }
+
+  .contact-links-content a, .contact-links-content span {
+    color: inherit !important;
+  }
+}
+
+.resume-agreement {
+  margin: 5px;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 5px 20px;
+  border: 1px dashed #ccc;
+}
+
+.summary-text {
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+
